@@ -20,5 +20,13 @@ public class Simulation {
         lock.swipeCard(staffCard);
         System.out.println("Staff Card is swiped");
         door.open();
+
+        //Create another student card
+        SmartCard studCard1 = new SmartCard("Ben");
+
+        //Attempts to swipe studCard1
+        lock.swipeCard(studCard1);
+        System.out.println("StudCard1 is swiped");
+        door.open();
     }
 }
